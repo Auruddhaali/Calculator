@@ -94,3 +94,10 @@ body {
     grid-row: span 2;
     height: 100%;
 }
+
+.equal {
+    grid-column: span 4;
+    background: #e6d922; /* Orange for delete */
+    color: white;
+    height: 100%;
+}
