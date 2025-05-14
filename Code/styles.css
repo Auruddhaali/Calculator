@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d0e7f9; /* Light blue background */
+}
+
+.calculator {
+    background: #2c3e50; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 20px;
+}
+
+.display {
+    background: #34495e; /* Slightly lighter dark */
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 70px);
+    gap: 8px;
+}
+
+.btn {
+    background: #3b4a59; /* Dark button background */
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: #00ffcc; /* Greenish text */
+    transition: background 0.2s;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: #4b5a69; /* Slightly lighter on hover */
+}
+
+.operator {
+    background: #1abc9c; /* Teal for operators */
+    color: white;
+}
+
+.operator:hover {
+    background: #16a085; /* Darker teal on hover */
+}
+
+.clear {
+    grid-column: span 2;
+    background: #e74c3c; /* Red for clear */
+    color: white;
+    height: 100%;
+}
+
+.clear:hover {
+    background: #c0392b; /* Darker red on hover */
+}
+
+.de {
+    grid-column: span 2;
+    background: #e67e22; /* Orange for delete */
+    color: white;
+    height: 100%;
+}
+
+.de:hover {
+    background: #d35400; /* Darker orange on hover */
+}
+
+.btn.operator[data-value="="] {
+    grid-row: span 2;
+    height: 100%;
+}
