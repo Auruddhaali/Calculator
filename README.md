@@ -19,7 +19,7 @@ A simple, responsive calculator web application inspired by the iPhone calculato
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Auruddhaali/Calculator.git
    ```
 2. Open the `index.html` file in your browser.
 3. Use the calculator for basic arithmetic operations.
